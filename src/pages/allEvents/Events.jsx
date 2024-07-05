@@ -15,7 +15,7 @@ const Events = () => {
 
     const fetchEvents = async () => {
         const response = await fetch(
-            "idk"
+            "https://localhost/events"
         );
         if (!response.ok) {
             throw new Error("Network response was not ok");

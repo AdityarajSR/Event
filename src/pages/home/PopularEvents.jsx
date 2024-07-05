@@ -14,6 +14,7 @@ const PopularEvents = () => {
     const fetchEvents = async () => {
         try {
           // const response = await axios.get("https://dream-craft-server.vercel.app/events");
+          const response = await axios.get("https://localhost/events");
           return response.data; 
         } catch (error) {
           return error.massage;

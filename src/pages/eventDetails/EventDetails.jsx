@@ -29,6 +29,7 @@ const EventDetails = () => {
   const fetchEvents = async () => {
     const response = await fetch(
       // `https://dream-craft-server.vercel.app/event/${params._id}`
+      `https://localhost/event/${params._id}`
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");
@@ -48,6 +49,7 @@ const EventDetails = () => {
   const recentEvents = async () => {
     const response = await fetch(
       // "https://dream-craft-server.vercel.app/events"
+      "https://localhost/events"
     );
     if (!response.ok) {
       throw new Error("Network response was not ok");

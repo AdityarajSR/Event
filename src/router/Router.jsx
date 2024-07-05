@@ -269,6 +269,7 @@ const Router = createBrowserRouter([
                 loader: ({ params }) =>
                     fetch(
                         // `https://dream-craft-server.vercel.app/user/${params.id}`,
+                        `https://localhost/user/${params.id}`,
                         { method: "POST" }
                     ),
                 element: (

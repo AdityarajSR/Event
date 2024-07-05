@@ -28,7 +28,7 @@ const Shop = () => {
     try {
       const response = await fetch(
         // "https://dream-craft-server.vercel.app/products"
-        // "http://localhost:8080/products"
+        "http://localhost:8080/products"
       );
 
       if (!response.ok) {
